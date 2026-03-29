@@ -57,7 +57,7 @@ export default function Hero() {
               <div className="flex items-center gap-2">
                 <ShieldCheck size={16} className="text-brand-orange" />
                 <span className="text-brand-orange text-sm font-semibold uppercase tracking-widest">
-                  Est. 2019 · Ealing, London
+                  Est. 2024 · Ealing, London
                 </span>
               </div>
             </Reveal>

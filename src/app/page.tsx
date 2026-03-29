@@ -10,7 +10,7 @@ import ArticlesSnippet from "@/components/sections/ArticlesSnippet";
 export const metadata: Metadata = {
   title: "Chop Tree London | Professional Tree Surgery & Arborist Services",
   description:
-    "Professional tree surgery, removal, stump grinding and crown lifting services across London since 2019. Fully insured arborists based in Ealing. Free quotations.",
+    "Professional tree surgery, removal, stump grinding and crown lifting services across London since 2024. Fully insured arborists based in Ealing. Free quotations.",
   alternates: {
     canonical: "https://choptreelondon.com",
   },

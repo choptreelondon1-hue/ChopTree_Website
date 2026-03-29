@@ -7,7 +7,7 @@ import CTASection from "@/components/sections/CTASection";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Chop Tree London — a professional arborist business serving London since 2019. Based in Ealing, fully insured, and committed to quality.",
+    "Learn about Chop Tree London — a professional arborist business serving London since 2024. Based in Ealing, fully insured, and committed to quality.",
   alternates: { canonical: "https://choptreelondon.com/about" },
 };
 
@@ -85,12 +85,12 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <p className="section-label mb-3">Est. 2019</p>
+              <p className="section-label mb-3">Est. 2024</p>
               <h2 className="section-heading mb-5">
                 Professionals You Can Count On
               </h2>
               <p className="text-brand-mid leading-relaxed mb-4">
-                Choptree London was founded in 2019 with a simple mission: to bring professional,
+                Choptree London was founded in 2024 with a simple mission: to bring professional,
                 honest, and high-quality tree care to London homeowners and businesses. Based in
                 Ealing, we have grown steadily by doing one thing well — delivering great work and
                 earning the trust of our clients.

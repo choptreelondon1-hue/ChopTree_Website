@@ -28,7 +28,7 @@ export default function AboutSnippet() {
               />
               {/* Floating badge */}
               <div className="absolute bottom-4 left-4 bg-white rounded-xl px-4 py-3 shadow-lg">
-                <div className="text-2xl font-extrabold text-brand-orange leading-none">2019</div>
+                <div className="text-2xl font-extrabold text-brand-orange leading-none">2024</div>
                 <div className="text-xs font-medium text-brand-mid mt-0.5">Established in London</div>
               </div>
             </div>
@@ -44,7 +44,7 @@ export default function AboutSnippet() {
             </h2>
             <p className="text-brand-mid leading-relaxed mb-4">
               Choptree London is a professional arborist business that has been providing expert
-              tree services across London since 2019. Based in Ealing, our experienced team can
+              tree services across London since 2024. Based in Ealing, our experienced team can
               handle everything from small repairs to large-scale projects.
             </p>
             <p className="text-brand-mid leading-relaxed mb-8">

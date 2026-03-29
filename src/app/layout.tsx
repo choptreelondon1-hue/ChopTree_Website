@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | Chop Tree London",
   },
   description:
-    "Professional tree surgery, tree removal, stump removal and crown lifting services across London since 2019. Fully insured arborists based in Ealing. Free quotations.",
+    "Professional tree surgery, tree removal, stump removal and crown lifting services across London since 2024. Fully insured arborists based in Ealing. Free quotations.",
   keywords: [
     "tree surgery London",
     "tree removal London",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "Chop Tree London",
     title: "Chop Tree London | Professional Tree Surgery & Arborist Services",
     description:
-      "Professional tree surgery, tree removal, stump removal and crown lifting services across London since 2019. Free quotations available.",
+      "Professional tree surgery, tree removal, stump removal and crown lifting services across London since 2024. Free quotations available.",
     images: [
       {
         url: "/og-image.jpg",
