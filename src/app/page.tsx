@@ -5,6 +5,7 @@ import AboutSnippet from "@/components/sections/AboutSnippet";
 import CTASection from "@/components/sections/CTASection";
 import MarketingPopup from "@/components/ui/MarketingPopup";
 import GoogleReviews from "@/components/sections/GoogleReviews";
+import ArticlesSnippet from "@/components/sections/ArticlesSnippet";
 
 export const metadata: Metadata = {
   title: "Chop Tree London | Professional Tree Surgery & Arborist Services",
@@ -22,6 +23,7 @@ export default function HomePage() {
       <MarketingPopup />
       <ServicesOverview />
       <GoogleReviews />
+      <ArticlesSnippet />
       <AboutSnippet />
       <CTASection />
     </>

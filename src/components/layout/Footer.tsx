@@ -12,6 +12,7 @@ const services = [
 const quickLinks = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
+  { label: "Advice", href: "/articles" },
   { label: "About Us", href: "/about" },
   { label: "Contact", href: "/contact" },
   { label: "Free Quote", href: "/contact" },
