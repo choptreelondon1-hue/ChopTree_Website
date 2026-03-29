@@ -49,7 +49,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container-site px-4 sm:px-6 lg:px-8 relative z-10 py-16">
+      <div className="container-site px-4 sm:px-6 lg:px-8 relative z-10 pt-16 pb-36 md:pb-40">
         <div className="grid lg:grid-cols-[1fr_auto] gap-8 lg:gap-12 items-center">
           <div className="max-w-2xl">
             {/* Label */}
