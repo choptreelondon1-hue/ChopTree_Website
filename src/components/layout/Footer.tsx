@@ -44,9 +44,9 @@ export default function Footer() {
               Professional arborist services across London since 2019. Trusted by hundreds of homeowners and businesses.
             </p>
             <div className="flex flex-col gap-3 text-sm text-gray-400">
-              <a href="tel:+447826151347" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
+              <a href="tel:+447398978210" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
                 <Phone size={14} className="text-brand-orange flex-shrink-0" />
-                07826 151347
+                07398 978210
               </a>
               <a href="mailto:choptreelondon1@gmail.com" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
                 <Mail size={14} className="text-brand-orange flex-shrink-0" />

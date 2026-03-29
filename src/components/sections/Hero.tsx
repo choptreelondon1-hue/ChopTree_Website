@@ -83,11 +83,11 @@ export default function Hero() {
                   <ChevronRight size={18} />
                 </Link>
                 <a
-                  href="tel:+447826151347"
+                  href="tel:+447398978210"
                   className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold px-8 py-4 rounded-lg hover:bg-white/20 transition-all duration-200 text-base"
                 >
                   <Phone size={18} />
-                  07826 151347
+                  07398 978210
                 </a>
                 <a
                   href={whatsappHref}

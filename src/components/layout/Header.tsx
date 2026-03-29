@@ -78,11 +78,11 @@ export default function Header() {
           {/* CTA + Mobile toggle */}
           <div className="flex items-center gap-3">
             <a
-              href="tel:+447826151347"
+              href="tel:+447398978210"
               className="hidden sm:flex items-center gap-2 text-sm font-semibold text-brand-orange hover:text-brand-orange-hover transition-colors"
             >
               <Phone size={16} />
-              <span>07826 151347</span>
+              <span>07398 978210</span>
             </a>
             <Link href="/contact" className="hidden md:inline-flex btn-primary text-sm py-2.5">
               Free Quote
@@ -116,11 +116,11 @@ export default function Header() {
               </Link>
             ))}
             <a
-              href="tel:+447826151347"
+              href="tel:+447398978210"
               className="mt-2 btn-primary justify-center"
             >
               <Phone size={16} />
-              Call 07826 151347
+              Call 07398 978210
             </a>
           </nav>
         </div>

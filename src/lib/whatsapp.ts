@@ -1,4 +1,4 @@
-const DEFAULT_WHATSAPP_NUMBER = "447826151347";
+const DEFAULT_WHATSAPP_NUMBER = "447398978210";
 
 export function getWhatsAppNumber(): string {
   const raw = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? DEFAULT_WHATSAPP_NUMBER;

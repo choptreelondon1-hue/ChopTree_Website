@@ -149,7 +149,7 @@ export default function ContactForm() {
 
       {formState === "error" && (
         <div className="bg-red-50 border border-red-200 rounded-lg px-4 py-3 text-sm text-red-600">
-          Something went wrong. Please try again or call us directly on 07826 151347.
+          Something went wrong. Please try again or call us directly on 07398 978210.
         </div>
       )}
 

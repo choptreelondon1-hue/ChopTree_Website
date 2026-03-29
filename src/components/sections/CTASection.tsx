@@ -27,11 +27,11 @@ export default function CTASection() {
               Request a Quote
             </Link>
             <a
-              href="tel:+447826151347"
+              href="tel:+447398978210"
               className="inline-flex items-center gap-2 border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white/10 transition-colors text-base"
             >
               <Phone size={18} />
-              07826 151347
+              07398 978210
             </a>
           </div>
         </Reveal>

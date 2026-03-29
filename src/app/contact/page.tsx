@@ -5,7 +5,7 @@ import ContactForm from "@/components/ui/ContactForm";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Chop Tree London for a free, no-obligation quote. Call 07826 151347 or fill in our contact form. Based in Ealing, serving all of London.",
+    "Get in touch with Chop Tree London for a free, no-obligation quote. Call 07398 978210 or fill in our contact form. Based in Ealing, serving all of London.",
   alternates: { canonical: "https://choptreelondon.com/contact" },
 };
 
@@ -13,14 +13,14 @@ const contactDetails = [
   {
     icon: Phone,
     label: "Phone",
-    value: "07826 151347",
-    href: "tel:+447826151347",
+    value: "07398 978210",
+    href: "tel:+447398978210",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
     value: "Chat for quick quotes",
-    href: "https://wa.me/447826151347",
+    href: "https://wa.me/447398978210",
   },
   {
     icon: Mail,
