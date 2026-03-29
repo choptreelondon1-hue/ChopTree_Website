@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-orange: #E8622A;
+  --color-orange-hover: #D4561F;
+  --color-orange-pale: #FFF4EE;
+  --color-dark: #1A1A1A;
+  --color-mid: #666666;
+  --color-border: #E8E8E8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #1A1A1A;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid #E8622A;
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8622A;
+  border-radius: 3px;
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+
+  .container-site {
+    @apply max-w-site mx-auto w-full;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-brand-orange text-white font-semibold px-6 py-3 rounded-lg hover:bg-brand-orange-hover transition-all duration-200 shadow-sm hover:shadow-md;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 border-2 border-brand-orange text-brand-orange font-semibold px-6 py-3 rounded-lg hover:bg-brand-orange hover:text-white transition-all duration-200;
+  }
+
+  .section-label {
+    @apply text-brand-orange text-sm font-bold uppercase tracking-widest;
+  }
+
+  .section-heading {
+    @apply text-display-md font-bold text-brand-dark leading-tight;
+  }
+}
