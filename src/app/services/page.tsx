@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { CheckCircle, Phone, ChevronRight, Scissors, TreePine, Circle, ArrowUpFromLine } from "lucide-react";
 import CTASection from "@/components/sections/CTASection";
+import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Tree Services",
@@ -79,8 +80,71 @@ const services = [
 ];
 
 export default function ServicesPage() {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Tree surgery and arborist services",
+    provider: {
+      "@type": "TreeService",
+      name: "Chop Tree London",
+      url: "https://choptreelondon.com",
+      telephone: "+44 7398 978210",
+    },
+    areaServed: "London",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Tree Services",
+      itemListElement: services.map((service) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: service.title,
+          description: service.tagline,
+        },
+      })),
+    },
+  };
+
+  const faqItems = [
+    {
+      question: "How quickly can you provide a tree work quote in London?",
+      answer:
+        "We usually respond within 2-4 hours during business hours and can often arrange a same-week site visit.",
+    },
+    {
+      question: "Do you remove all waste after tree surgery or tree removal?",
+      answer:
+        "Yes. We clear and remove arisings so your property is left clean and tidy after the job is complete.",
+    },
+    {
+      question: "Are you fully insured for tree work?",
+      answer:
+        "Yes. Chop Tree London is fully insured and all work is completed safely using professional equipment.",
+    },
+    {
+      question: "Can I send photos first for a quicker quote?",
+      answer:
+        "Yes. The fastest route is to send photos and your postcode on WhatsApp so we can assess access and scope quickly.",
+    },
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <>
+      <JsonLd data={serviceSchema} />
+      <JsonLd data={faqSchema} />
       {/* Page header */}
       <section className="pt-32 pb-16 bg-brand-dark relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-20" />
@@ -162,6 +226,28 @@ export default function ServicesPage() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-20 bg-brand-orange-pale">
+        <div className="container-site px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <p className="section-label mb-3 text-center">FAQs</p>
+            <h2 className="section-heading text-center mb-8">
+              Common Questions About Tree Services
+            </h2>
+            <div className="space-y-4">
+              {faqItems.map((item) => (
+                <article
+                  key={item.question}
+                  className="bg-white border border-brand-border rounded-xl p-5 md:p-6"
+                >
+                  <h3 className="text-brand-dark font-bold mb-2">{item.question}</h3>
+                  <p className="text-brand-mid leading-relaxed">{item.answer}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>

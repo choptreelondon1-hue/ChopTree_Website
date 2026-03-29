@@ -1,5 +1,6 @@
 import { Star, ExternalLink } from "lucide-react";
 import Reveal from "@/components/ui/Reveal";
+import JsonLd from "@/components/seo/JsonLd";
 
 const googleReviewsUrl =
   "https://www.google.com/search?q=choptree+london&oq=choptree+london&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIQCAEQLhjHARixAxjRAxiABDINCAIQLhiDARixAxiABDINCAMQABixAxjJAxiABDINCAQQABiDARixAxiABDINCAUQLhjHARjRAxiABDIGCAYQRRg8MgYIBxBFGDzSAQg0NDEyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x845f87be7aae5157:0xbed821d3c5e56bf5,1,,,,";
@@ -25,9 +26,34 @@ const reviews = [
 ];
 
 export default function GoogleReviews() {
+  const reviewsSchema = {
+    "@context": "https://schema.org",
+    "@type": "TreeService",
+    name: "Chop Tree London",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5.0",
+      reviewCount: "3",
+    },
+    review: reviews.map((review) => ({
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: review.name,
+      },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody: review.text,
+    })),
+  };
+
   return (
     <section className="section-padding bg-white border-t border-brand-border">
       <div className="container-site">
+        <JsonLd data={reviewsSchema} />
         <Reveal className="text-center mb-10">
           <p className="section-label mb-3">Google Reviews</p>
           <h2 className="section-heading mb-3">Rated 5.0 by Local Customers</h2>
